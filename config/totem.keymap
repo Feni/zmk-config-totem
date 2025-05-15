@@ -37,6 +37,11 @@
             bindings = <&kp ENTER>;
             key-positions = <33 36>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <36 34>;
+        };
     };
 
     macros {
@@ -169,7 +174,7 @@
             &kp Y      &kp L  &kp O                       &kp U               &kp PERIOD       &kp B            &kp P      &kp D         &kp M  &kp F
             &kp I      &kp R  &kp A                       &kp H               &kp Z            &kp G            &kp C      &kp T         &kp N  &kp S
 &kp ESCAPE  &kp MINUS  &kp X  &mt LEFT_CONTROL SQT        &mt LEFT_ALT COMMA  &kp SEMICOLON    &kp V            &kp W      &kp K         &kp Q  &kp J  &kp DELETE
-                              &mt LEFT_COMMAND BACKSPACE  &kp E               &kp BACKSPACE    &kp RIGHT_SHIFT  &kp SPACE  &lt 2 ESCAPE
+                              &mt LEFT_COMMAND BACKSPACE  &kp E               &kp BACKSPACE    &kp RIGHT_SHIFT  &kp SPACE  &lt 1 ESCAPE
             >;
         };
 
@@ -178,7 +183,7 @@
         &p_you   &p_ill  &p_ould  &p_ound  &trans    &p_because  &trans  &p_and  &trans   &p_for
         &p_ight  &p_res  &p_all   &p_have  &trans    &p_ing      &p_com  &p_the  &p_tion  &p_ess
 &trans  &trans   &trans  &trans   &trans   &trans    &p_ver      &trans  &trans  &trans   &trans  &trans
-                         &trans   &trans   &trans    &trans      &trans  &trans
+                         &trans   &trans   &trans    &trans      &to 2   &trans
             >;
         };
 
@@ -188,7 +193,7 @@
         &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+                                 &trans        &trans  &trans    &trans  &to 0   &to 0
             >;
         };
     };
