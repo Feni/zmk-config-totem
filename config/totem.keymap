@@ -217,7 +217,7 @@
             akt_el { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
             akt_il { trigger-keys = <I>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
 
-        }
+        };
     };
 
     keymap {
