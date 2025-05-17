@@ -182,6 +182,8 @@
             akt_oh { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
             
 
+            // These bi-grams aren't used much, so it could be swapped with U, but the 
+            // benefit isn't there for the cognitive overhead.
             akt_ch { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
             akt_sh { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
             akt_th { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
@@ -194,9 +196,10 @@
             bindings = <&kp N>;
 
 
-            akt_an { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            akt_en { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            akt_in { trigger-keys = <I>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+            akt_an { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+            akt_en { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+            akt_in { trigger-keys = <I>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+            // Keep the OL roll as it originally is.
             akt_on { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
             
 
@@ -204,6 +207,17 @@
             akt_sn { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
             akt_tn { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
         };
+
+        ak_l: ak_l {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp L>;
+
+            akt_al { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+            akt_el { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+            akt_il { trigger-keys = <I>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+
+        }
     };
 
     keymap {
@@ -212,7 +226,7 @@
         base_layer {
             label = "BASE";
             bindings = <
-            &kp Y      &kp L  &kp O                 &kp U               &kp PERIOD       &kp B            &kp P      &kp D                 &kp M  &kp F
+            &kp Y      &ak_l  &kp O                 &kp U               &kp PERIOD       &kp B            &kp P      &kp D                 &kp M  &kp F
             &kp I      &kp R  &kp A                 &ak_h               &kp Z            &kp G            &kp C      &kp T                 &ak_n  &kp S
 &kp ESCAPE  &kp MINUS  &kp X  &mt LEFT_CONTROL SQT  &mt LEFT_ALT COMMA  &kp SEMICOLON    &kp V            &kp W      &kp K                 &kp Q  &kp J  &kp DELETE
                               &lt 2 BACKSPACE       &kp E               &to 1            &sk RIGHT_SHIFT  &kp SPACE  &mt LEFT_COMMAND TAB
