@@ -168,6 +168,76 @@
             bindings = <&to 0 &kp SPACE>;
             label = "P_SPACE";
         };
+
+        p_ing_s: p_ing_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G &kp SPACE>;
+            label = "P_ING_S";
+        };
+
+        p_ing_c: p_ing_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G &kp COMMA>;
+            label = "P_ING_C";
+        };
+
+        p_ing_p: p_ing_p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G &kp PERIOD>;
+            label = "P_ING_P";
+        };
+
+        p_igh: p_igh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp G &kp H>;
+            label = "P_IGH";
+        };
+
+        p_ion: p_ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N>;
+            label = "P_ION";
+        };
+
+        p_ive: p_ive {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp V &kp E>;
+            label = "P_IVE";
+        };
+
+        p_ike: p_ike {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp K &kp E>;
+            label = "P_IKE";
+        };
+
+        p_int: p_int {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp T>;
+            label = "P_INT";
+        };
+
+        p_ist: p_ist {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp S &kp T>;
+            label = "P_IST";
+        };
+
+        p_ith: p_ith {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp T &kp H>;
+            label = "P_ITH";
+        };
     };
 
     behaviors {
@@ -176,18 +246,50 @@
             #binding-cells = <0>;
             bindings = <&kp H>;
 
-            akt_ah { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
-            akt_eh { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
-            akt_ih { trigger-keys = <I>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
-            akt_oh { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
-            
+            akt_ah {
+                trigger-keys = <A>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
+
+            akt_eh {
+                trigger-keys = <E>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
+
+            akt_ih {
+                trigger-keys = <I>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
+
+            akt_oh {
+                trigger-keys = <O>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
 
             // These bi-grams aren't used much, so it could be swapped with U, but the 
             // benefit isn't there for the cognitive overhead.
-            akt_ch { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
-            akt_sh { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
-            akt_th { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp N>; };
 
+            akt_ch {
+                trigger-keys = <C>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
+
+            akt_sh {
+                trigger-keys = <S>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
+
+            akt_th {
+                trigger-keys = <T>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
         };
 
         ak_n: ak_n {
@@ -195,17 +297,49 @@
             #binding-cells = <0>;
             bindings = <&kp N>;
 
+            akt_an {
+                trigger-keys = <A>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp L>;
+            };
 
-            akt_an { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
-            akt_en { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
-            akt_in { trigger-keys = <I>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+            akt_en {
+                trigger-keys = <E>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp L>;
+            };
+
+            akt_in {
+                trigger-keys = <I>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp L>;
+            };
+
             // Keep the OL roll as it originally is.
-            akt_on { trigger-keys = <O>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            
 
-            akt_cn { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            akt_sn { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            akt_tn { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+            akt_on {
+                trigger-keys = <O>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
+
+            akt_cn {
+                trigger-keys = <C>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
+
+            akt_sn {
+                trigger-keys = <S>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
+
+            akt_tn {
+                trigger-keys = <T>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
         };
 
         ak_l: ak_l {
@@ -213,10 +347,23 @@
             #binding-cells = <0>;
             bindings = <&kp L>;
 
-            akt_al { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            akt_el { trigger-keys = <E>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
-            akt_il { trigger-keys = <I>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
+            akt_al {
+                trigger-keys = <A>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
 
+            akt_el {
+                trigger-keys = <E>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
+
+            akt_il {
+                trigger-keys = <I>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
         };
     };
 
@@ -247,7 +394,7 @@
         &p_you   &p_ill  &p_ould  &p_ound  &trans    &p_because  &trans  &p_and  &trans   &p_for
         &p_ight  &p_res  &p_all   &p_have  &trans    &p_ing      &p_com  &p_the  &p_tion  &p_ess
 &trans  &trans   &trans  &trans   &trans   &trans    &p_ver      &trans  &trans  &trans   &trans  &trans
-                         &trans   &trans   &trans    &trans      &to 3   &trans
+                         &trans   &trans   &trans    &trans      &to 4   &trans
             >;
         };
 
@@ -258,6 +405,15 @@
         &bootloader  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                              &trans  &trans  &to 0     &trans  &to 0   &to 0
+            >;
+        };
+
+        al_i {
+            bindings = <
+        &trans  &trans  &trans  &trans    &p_ing_p    &trans   &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans    &trans      &p_ight  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &p_ing_c  &trans      &trans   &trans    &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans      &trans   &p_ing_s  &trans
             >;
         };
     };
