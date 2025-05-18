@@ -292,7 +292,7 @@
                 trigger-keys = <I>;
                 max-prior-idle-ms = <300>;
                 // bindings = <&kp L>;
-                bindings = <&sl 4>;
+                bindings = <&to 4>;
             };
 
             // Keep the OL roll as it originally is.
@@ -374,7 +374,7 @@
         &p_you   &p_ill  &p_ould  &p_ound  &trans    &p_because  &trans  &p_and  &trans   &p_for
         &p_ight  &p_res  &p_all   &p_have  &trans    &p_ing      &p_com  &p_the  &p_tion  &p_ess
 &trans  &trans   &trans  &trans   &trans   &trans    &p_ver      &trans  &trans  &trans   &trans  &trans
-                         &trans   &trans   &trans    &trans      &to 4   &trans
+                         &trans   &trans   &trans    &trans      &to 0   &trans
             >;
         };
 
@@ -393,7 +393,7 @@
         &p_ing  &p_ing  &p_ing  &p_ing    &p_ing    &p_ing   &p_ing    &p_ing  &p_ing  &p_ing
         &p_ing  &p_ing  &p_ing  &p_ing    &p_ing      &p_ight  &p_ing    &p_ing  &p_ing  &p_ing
 &p_ing  &p_ing  &p_ing  &p_ing  &p_ing  &p_ing      &p_ing   &p_ing    &p_ing  &p_ing  &p_ing  &p_ing
-                        &p_ing  &p_ing    &p_ing      &p_ing   &p_ing  &p_ing
+                        &to 0  &p_ing    &p_ing      &p_ing   &p_ing  &p_ing
             >;
         };
     };
