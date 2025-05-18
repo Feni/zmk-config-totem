@@ -270,6 +270,12 @@
                 max-prior-idle-ms = <300>;
                 bindings = <&kp H &kp E>;
             };
+
+            akt_nh {
+                trigger-keys = <N>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp N>;
+            };
         };
 
         ak_n: ak_n {
@@ -318,6 +324,12 @@
                 max-prior-idle-ms = <300>;
                 bindings = <&kp H>;
             };
+
+            akt_hn {
+                trigger-keys = <H>;
+                max-prior-idle-ms = <300>;
+                bindings = <&kp H>;
+            };
         };
     };
 
@@ -338,7 +350,7 @@
             bindings = <
         &kp GRAVE        &kp AT_SIGN  &kp HASH               &kp DOLLAR         &kp PERIOD       &kp LCTRL    &kp N7             &mt UP_ARROW N8       &kp N9              &kp PLUS
         &kp EXCLAMATION  &kp EQUAL    &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp AMPERSAND    &kp PERCENT  &mt LEFT NUMBER_4  &mt DOWN N5           &mt RIGHT NUMBER_6  &kp ASTERISK
-&trans  &trans           &trans       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp SLASH        &trans       &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3        &kp BACKSLASH  &trans
+&to 3  &trans           &trans       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp SLASH        &trans       &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3        &kp BACKSLASH  &trans
                                       &trans                 &kp UNDERSCORE     &to 0            &trans       &kp SPACE          &mt RIGHT_CONTROL N0
             >;
         };
