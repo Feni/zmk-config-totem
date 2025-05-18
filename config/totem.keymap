@@ -57,6 +57,13 @@
             label = "P_ING";
         };
 
+        p_ing_b: p_ing_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G>;
+            label = "P_ING_B";
+        };
+
         p_and: p_and {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -291,7 +298,7 @@
             akt_in {
                 trigger-keys = <I>;
                 max-prior-idle-ms = <300>;
-                bindings = <&kp L>;
+                bindings = <&p_ing_b>;
             };
 
             // Keep the OL roll as it originally is.
