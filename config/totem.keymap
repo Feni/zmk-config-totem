@@ -268,7 +268,7 @@
             akt_th {
                 trigger-keys = <T>;
                 max-prior-idle-ms = <300>;
-                bindings = <&kp H &kp e>;
+                bindings = <&kp H &kp E>;
             };
         };
 
