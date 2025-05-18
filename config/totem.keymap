@@ -53,7 +53,7 @@
         p_ing: p_ing {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G>;
+            bindings = <&kp I &kp N &kp G &trans>;
             label = "P_ING";
         };
 
@@ -167,27 +167,6 @@
             #binding-cells = <0>;
             bindings = <&to 0 &kp SPACE>;
             label = "P_SPACE";
-        };
-
-        p_ing_s: p_ing_s {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G &kp SPACE>;
-            label = "P_ING_S";
-        };
-
-        p_ing_c: p_ing_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G &kp COMMA>;
-            label = "P_ING_C";
-        };
-
-        p_ing_p: p_ing_p {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G &kp PERIOD>;
-            label = "P_ING_P";
         };
 
         p_igh: p_igh {
@@ -312,7 +291,8 @@
             akt_in {
                 trigger-keys = <I>;
                 max-prior-idle-ms = <300>;
-                bindings = <&kp L>;
+                // bindings = <&kp L>;
+                bindings = <&sl 4>;
             };
 
             // Keep the OL roll as it originally is.
@@ -410,10 +390,10 @@
 
         al_i {
             bindings = <
-        &trans  &trans  &trans  &trans    &p_ing_p    &trans   &trans    &trans  &trans  &trans
-        &trans  &trans  &trans  &trans    &trans      &p_ight  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &p_ing_c  &trans      &trans   &trans    &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans      &trans   &p_ing_s  &trans
+        &p_ing  &p_ing  &p_ing  &p_ing    &p_ing    &p_ing   &p_ing    &p_ing  &p_ing  &p_ing
+        &p_ing  &p_ing  &p_ing  &p_ing    &p_ing      &p_ight  &p_ing    &p_ing  &p_ing  &p_ing
+&p_ing  &p_ing  &p_ing  &p_ing  &p_ing  &p_ing      &p_ing   &p_ing    &p_ing  &p_ing  &p_ing  &p_ing
+                        &p_ing  &p_ing    &p_ing      &p_ing   &p_ing  &p_ing
             >;
         };
     };
