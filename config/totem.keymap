@@ -291,8 +291,7 @@
             akt_in {
                 trigger-keys = <I>;
                 max-prior-idle-ms = <300>;
-                // bindings = <&kp L>;
-                bindings = <&to 4>;
+                bindings = <&kp L>;
             };
 
             // Keep the OL roll as it originally is.
