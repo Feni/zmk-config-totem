@@ -9,7 +9,7 @@
 #define TVP2 5
 
 
-#define AK_IDLE_MS = 850
+#define AK_IDLE_MS 850
 
 &mt {
     quick-tap-ms = <175>;
