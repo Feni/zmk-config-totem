@@ -229,68 +229,45 @@
             #binding-cells = <0>;
             bindings = <&kp H>;
 
-            akt_ah {
-                trigger-keys = <A>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp N>;
-            };
+//             akt_ah {
+//                 trigger-keys = <A>;
+//                 max-prior-idle-ms = <AK_IDLE_MS>;
+//                 bindings = <&kp N>;
+//             };
 
-            akt_eh {
-                trigger-keys = <E>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp N>;
-            };
+//             akt_eh {
+//                 trigger-keys = <E>;
+//                 max-prior-idle-ms = <AK_IDLE_MS>;
+//                 bindings = <&kp N>;
+//             };
 
-            akt_ih {
-                trigger-keys = <I>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp N>;
-            };
+//             akt_ih {
+//                 trigger-keys = <I>;
+//                 max-prior-idle-ms = <AK_IDLE_MS>;
+//                 bindings = <&kp N>;
+//             };
 
-            akt_oh {
-                trigger-keys = <O>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp N>;
-            };
+//             akt_oh {
+//                 trigger-keys = <O>;
+//                 max-prior-idle-ms = <AK_IDLE_MS>;
+//                 bindings = <&kp N>;
+//             };
 
-            akt_rh {
-                trigger-keys = <R>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp N>;
-            };
+//            akt_rh {
+//                trigger-keys = <R>;
+//                max-prior-idle-ms = <AK_IDLE_MS>;
+//                bindings = <&kp N>;
+//            };
 
             // These bi-grams aren't used much, so it could be swapped with U, but the 
             // benefit isn't there for the cognitive overhead.
 
-            akt_ch {
-                trigger-keys = <C>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp O &kp M>;
-            };
+            
 
-            akt_sh {
-                trigger-keys = <S>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp O &kp M &kp E>;
-            };
 
-            akt_th {
-                trigger-keys = <T>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp H &kp E>;
-            };
 
-            akt_nh {
-                trigger-keys = <N>;
-                max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp N>;
-            };
-        };
+            // Swap start
 
-        ak_n: ak_n {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp N>;
 
             akt_an {
                 trigger-keys = <A>;
@@ -316,29 +293,67 @@
                 bindings = <&kp U &kp T>;
             };
 
-            akt_cn {
+
+            // swap end
+
+        };
+
+        ak_n: ak_n {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp N>;
+
+            // swap start
+
+            akt_ch {
                 trigger-keys = <C>;
                 max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp H>;
+                bindings = <&kp O &kp M>;
             };
 
-            akt_sn {
+            akt_sh {
                 trigger-keys = <S>;
                 max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp H>;
+                bindings = <&kp O &kp M &kp E>;
             };
 
-            akt_tn {
+            akt_th {
                 trigger-keys = <T>;
                 max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp H>;
+                bindings = <&kp H &kp E>;
             };
 
-            akt_hn {
-                trigger-keys = <H>;
+            akt_nh {
+                trigger-keys = <N>;
                 max-prior-idle-ms = <AK_IDLE_MS>;
-                bindings = <&kp H>;
+                bindings = <&kp N>;
             };
+
+            // swap end
+
+//            akt_cn {
+//                trigger-keys = <C>;
+//                max-prior-idle-ms = <AK_IDLE_MS>;
+//                bindings = <&kp H>;
+//            };
+//
+//            akt_sn {
+//                trigger-keys = <S>;
+//                max-prior-idle-ms = <AK_IDLE_MS>;
+//                bindings = <&kp H>;
+//            };
+//
+//            akt_tn {
+//                trigger-keys = <T>;
+//                max-prior-idle-ms = <AK_IDLE_MS>;
+//                bindings = <&kp H>;
+//            };
+//
+//            akt_hn {
+//                trigger-keys = <H>;
+//                max-prior-idle-ms = <AK_IDLE_MS>;
+//                bindings = <&kp H>;
+//            };
         };
     };
 
