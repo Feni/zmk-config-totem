@@ -366,7 +366,7 @@
             &kp Y      &kp L  &kp O                 &kp U               &kp PERIOD       &kp B            &kp P      &kp D                 &kp M  &kp F
             &kp I      &kp R  &kp A                 &ak_h               &kp Z            &kp G            &kp C      &kp T                 &ak_n  &kp S
 &kp ESCAPE  &kp MINUS  &kp X  &mt LEFT_CONTROL SQT  &mt LEFT_ALT COMMA  &kp SEMICOLON    &kp V            &kp W      &kp K                 &kp Q  &kp J  &kp DELETE
-                              &lt 2 BACKSPACE       &kp E               &mo 1            &sk RIGHT_SHIFT  &kp SPACE  &mt LEFT_COMMAND TAB
+                              &lt 2 BACKSPACE       &kp E               &mo 1            &sk RIGHT_SHIFT  &kp SPACE  &bootloader
             >;
         };
 
